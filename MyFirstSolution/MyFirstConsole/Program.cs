@@ -6,7 +6,10 @@ namespace MyFirstConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 10;
+            Console.WriteLine(a);
+
+            Console.ReadKey();
         }
     }
 }
