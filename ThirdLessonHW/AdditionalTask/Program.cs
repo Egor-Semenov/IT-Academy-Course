@@ -30,16 +30,16 @@ namespace AdditionalTask
                     {
                         NOD = arr[iteration];
                     }
-                    else
+                    else if(NOD > arr[iteration])
                     {
                         NOD = NOD % arr[iteration];
                     }
 
-                    if ((arr[iteration] > NOD) && (arr[iteration] % NOD) == 0)
+                    if ((arr[iteration] >= NOD) && (arr[iteration] % NOD) == 0)
                     {
                         c++;
                     }
-                    else
+                    else if(arr[iteration] > NOD)
                     {
                         NOD = arr[iteration] % NOD;
                     }
