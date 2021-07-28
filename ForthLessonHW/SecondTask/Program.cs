@@ -8,11 +8,13 @@ namespace SecondTask
         {
 
             string str = "";
-            for(int i = 200; i <= 500; i++ )
+            int start = 199;
+            int end = 500;
+            while(++start <= end)            
             {
-                if (i % 17 == 0)
+                if (start % 17 == 0)
                 {
-                    str += Convert.ToString(i) + ","; 
+                    str += start + ","; 
                 }
             }
             str = str.Remove(str.Length - 1);
