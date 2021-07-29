@@ -26,9 +26,9 @@ namespace First_SecondTaskLibrary
         public int[] NewValue( int[] source, int newValue, int index)
         {
             Array.Resize(ref source, source.Length + 1);
-            for (int i = source.Length; i > index; i--) 
+            for (int i = source.Length - 1; i > index; i--) 
             {
-                source[i-1] = source[i - 2];
+                source[i] = source[i - 1];
             }
             source[index] = newValue;
             return source;
