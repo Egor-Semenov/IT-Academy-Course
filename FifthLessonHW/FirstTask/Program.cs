@@ -8,7 +8,7 @@ namespace FirstTask
         static void Main(string[] args)
         {
             ArrayWorker arr = new ArrayWorker();
-            arr.array = new int[] { 1,5,4,8,};
+            arr.array = new int[] { 1, 5, 4, 8, 7, 8, 3, 6, 5 };
 
             arr.array = arr.Invert(arr.array);
 

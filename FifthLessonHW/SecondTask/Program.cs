@@ -8,7 +8,7 @@ namespace SecondTask
         static void Main(string[] args)
         {
             ArrayWorker arr = new ArrayWorker();
-            arr.array = new int[] { 1, 5, 4, 8, };
+            arr.array = new int[] { 1, 5, 4, 8, 9, 7, 1 };
 
             Console.WriteLine("Введите значение нового элемента массива :");
             arr.newValue = int.Parse(Console.ReadLine());
