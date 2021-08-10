@@ -16,63 +16,43 @@ namespace FirstTask.FirstTaskClassLibrary
             {
                 return bookName;
             }
-
-            set
-            {
-                bookName = value;
-            }
         }
 
         string libraryName;
 
-        public string LibraryName
-        {
-            get
-            {
-                return libraryName;
-            }
-
-            set
-            {
-                libraryName = value;
-            }
+         public string LibraryName
+         {
+             get
+             {
+                 return libraryName;
+             }
         }
         int pageNumber;
 
-        public int PageNumber
-        {
-            get
-            {
-                return pageNumber;
-            }
-
-            set
-            {
-                pageNumber = value;
-            }
-        }
+         public int PageNumber
+         {
+             get
+             {
+                 return pageNumber;
+             }
+         }
 
         string author;
 
-        public string Author
-        {
-            get
-            {
-                return author;
-            }
-
-            set
-            {
-                author = value;
-            }
-        }
-
+          public string Author
+          {
+              get
+              {
+                  return author;
+              }
+          }
+        
         public Book(string bookName, string author, string libaryName, int pageNumber)
         {
-            BookName = bookName;
-            Author = author;
-            LibraryName = libaryName;
-            PageNumber = pageNumber;
+            this.bookName = bookName;
+            this.author = author;
+            this.libraryName = libaryName;
+            this.pageNumber = pageNumber;
         }
 
 
