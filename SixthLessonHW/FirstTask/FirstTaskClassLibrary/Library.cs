@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace FirstTask.FirstTaskClassLibrary
 {
-    static class Library
+    public static class Library
     {
+        private static Book[] books;
+
+        public static Book[] Books
+        {
+            get
+            {
+                return books;
+            }
+        }
+
 
         public static void IndexInformation(Book[] books, int index)
         {

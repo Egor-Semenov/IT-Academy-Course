@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FirstTask.FirstTaskClassLibrary
 {
-    class Book
+    public class Book
     {
         string bookName;
 

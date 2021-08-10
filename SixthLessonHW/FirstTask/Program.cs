@@ -9,7 +9,8 @@ namespace FirstTask
         {
             Console.WriteLine();
 
-            Book[] books = new Book[6];
+            var books = Library.Books;
+            books = new Book[6];
 
             Book book1 = new Book("Таинственный остров", "Жюль Верн", "Британская библиотека", 544);
             Book book2 = new Book("Крёстный отец", "Марио Пьюзо", "Библиотека Конгресса США", 576);
