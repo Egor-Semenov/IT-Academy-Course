@@ -9,8 +9,9 @@ namespace FirstTask
         {
             Console.WriteLine();
 
-            var books = Library.Books;
-            books = new Book[6];
+            Library library = new Library();
+
+            library.Books = new Book[6];
 
             Book book1 = new Book("Таинственный остров", "Жюль Верн", "Британская библиотека", 544);
             Book book2 = new Book("Крёстный отец", "Марио Пьюзо", "Библиотека Конгресса США", 576);
@@ -19,18 +20,18 @@ namespace FirstTask
             Book book5 = new Book("Побег из Шоушенка", "Стивен Кинг", "Королевская библиотека Дании", 192);
             Book book6 = new Book("Мастер и Маргарита", "Михаил Булгаков", "Библиотека Конгресса США", 528);
 
-            books[0] = book1;
-            books[1] = book2;
-            books[2] = book3;
-            books[3] = book4;
-            books[4] = book5;
-            books[5] = book6;
+            library.Books[0] = book1;
+            library.Books[1] = book2;
+            library.Books[2] = book3;
+            library.Books[3] = book4;
+            library.Books[4] = book5;
+            library.Books[5] = book6;
 
-            Library.IndexInformation(books, 0);
+            library.IndexInformation(library.Books, 0);
 
-            Library.BookNameInformation(books);
+            library.BookNameInformation(library.Books);
 
-            books.LargestBookInLibrary();
+            library.LargestBookInLibrary(library.Books);
         }
     }
 }
