@@ -25,10 +25,9 @@ namespace FirstTask
             collection.AddItem(boat1);
             collection.AddItem(boat2);
 
-            int collectionItemNumber = collection.NumberOfItems;
-
             Console.WriteLine("Collection information:");
-            for(int i = 0; i < collectionItemNumber; i++)
+            Console.WriteLine($"Number of items in the collection : {collection.NumberOfItems}");
+            for(int i = 0; i < collection.NumberOfItems; i++)
             {
                 collection[i].GetCollectionInformation();
             }
