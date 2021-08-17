@@ -14,20 +14,24 @@ namespace FirstTask
 
             collection.myCollection = new List<IMovable>();
 
-            Console.WriteLine(collection.NumberOfItems);
+            Car car1 = new Car() { Name = "Audi", maxSpeed = 150 };
+            Car car2 = new Car() { Name = "BMW", maxSpeed = 200 };
 
-            Car car = new Car();
+            Boat boat1 = new Boat() { Name = "Intex", maxSpeed = 70 };
+            Boat boat2 = new Boat() { Name = "STREAM", maxSpeed = 65 };
 
-            collection.AddItem(car);
-            Console.WriteLine(collection[0]);
+            collection.AddItem(car1);
+            collection.AddItem(car2);
+            collection.AddItem(boat1);
+            collection.AddItem(boat2);
 
-            Boat boat = new Boat();
+            int collectionItemNumber = collection.NumberOfItems;
 
-            collection.AddItem(boat);
-
-            Console.WriteLine(collection[1]);
-
-            Console.WriteLine(collection.NumberOfItems);
+            Console.WriteLine("Collection information:");
+            for(int i = 0; i < collectionItemNumber; i++)
+            {
+                collection[i].GetCollectionInformation();
+            }
         }
     }
 }

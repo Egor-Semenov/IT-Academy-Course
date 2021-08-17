@@ -9,9 +9,12 @@ namespace FirstTask.Models
 {
     public class Car : IMovable
     {
-        public void Move()
+        public string Name { get; set; }
+        public int maxSpeed { get; set; }
+
+        public void GetCollectionInformation()
         {
-            
+            Console.WriteLine($"Name : {Name}, Max speed : {maxSpeed}");
         }
     }
 }

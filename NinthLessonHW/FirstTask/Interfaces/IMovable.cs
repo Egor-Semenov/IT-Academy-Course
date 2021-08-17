@@ -8,6 +8,10 @@ namespace FirstTask.Interfaces
 {
     public interface IMovable
     {
-        public void Move();
+        string Name { get; set; }
+        int maxSpeed { get; set; }
+
+        void GetCollectionInformation();
+        
     }
 }
