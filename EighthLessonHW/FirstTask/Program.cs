@@ -9,12 +9,9 @@ namespace FirstTask
         {
             Room room = new Room();
 
-            Printer printer;
-
             GreenPrinter greenPrinter = new GreenPrinter();
-            printer = greenPrinter;
+            room.Printer = greenPrinter;
 
-            room.Printer = printer;
             room.MakeThisLazyPrinterWork("У этого принтера зелёные чернила!");
 
             BluePrinter bluePrinter = new BluePrinter();
