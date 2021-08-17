@@ -9,19 +9,7 @@ namespace FirstTask
 {
     public class Room
     {
-        Printer printer;
-
-        public Printer Printer
-        {
-            get
-            {
-                return printer;
-            }
-            set
-            {
-                printer = value;
-            }
-        }
+        public Printer printer;
 
         public void MakeThisLazyPrinterWork(string value)
         {
