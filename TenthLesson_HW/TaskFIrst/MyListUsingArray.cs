@@ -66,7 +66,7 @@ namespace TaskFirst
         {
             foreach (var item in list)
             {
-                yield return (MyItem)item;
+                yield return item;
             }
         }
 
