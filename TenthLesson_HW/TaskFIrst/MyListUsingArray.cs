@@ -10,7 +10,7 @@ namespace TaskFirst
     public class MyListUsingArray : IList<MyItem>
     {
 
-        private MyItem[] list = new MyItem[] { };
+        private MyItem[] list;
         int position = -1;
         public MyItem this[int index]
         {
