@@ -8,11 +8,6 @@ namespace FourthTask
     {
         static void Main(string[] args)
         {
-            /*
-             * Объединить два массива чисел
-             * вывести на консоль три первых положительных значения во второй половине
-             */
-
             Person magnus = new Person { FirstName = "Magnus", LastName = "Hedlund" };
             Person terry = new Person { FirstName = "Terry", LastName = "Adams" };
             Person charlotte = new Person { FirstName = "Charlotte", LastName = "Weiss" };
